@@ -1,0 +1,4 @@
+Options -Indexes
+Require all denied
+RemoveHandler .php .phtml .php3 .php4 .php5 .phar
+RemoveType .php .phtml .php3 .php4 .php5 .phar

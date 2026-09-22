@@ -1,0 +1,2 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-confirm]').forEach(el=>el.addEventListener('click',e=>{if(!confirm(el.dataset.confirm||'Are you sure?'))e.preventDefault()}));document.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',async()=>{await navigator.clipboard.writeText(el.dataset.copy);const old=el.innerHTML;el.innerHTML='<i class="bi bi-check2"></i> Copied';setTimeout(()=>el.innerHTML=old,1800)}));});
+
